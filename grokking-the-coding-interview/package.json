@@ -1,0 +1,10 @@
+{
+  "name": "educative.io-grokking-the-coding-interview",
+  "version": "0.0.1",
+  "author": "cshen.dev",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "collections": "^5.1.12"
+  }
+}

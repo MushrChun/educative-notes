@@ -1,4 +1,4 @@
-const Heap = require('./collections/heap'); //http://www.collectionsjs.com
+const Heap = require('collections/heap'); //http://www.collectionsjs.com
 
 class Meeting {
     constructor(start, end) {
@@ -16,7 +16,7 @@ function min_meeting_rooms(meetings) {
     let minHeap = new Heap([], null, ((a, b) => b.end - a.end))
 
     for (let i = 0; i < meetings.length; i++) {
-        while (minHeap.length > 0 && meetings[i].start > minHeap.peek().end) {
+        while (minHeap.length > 0 && meetings[i].start >= minHeap.peek().end) {
             minHeap.pop()
         }
 
